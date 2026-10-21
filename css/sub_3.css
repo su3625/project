@@ -1,0 +1,61 @@
+/* 서브페이지 메인비주얼(bg 바꿀것) */
+.sub_mv { margin-top: 120px; width: 100%; height: 260px; background: url(../images/sub_mv/sub_03.jpg) no-repeat center; background-size: cover; }
+.sub_mv_text { color: #fff; text-align: center; padding: 70px 0; }
+.sub_mv_text p:nth-child(1) { font-size: 60px; }
+.sub_mv_text p:nth-child(2) { color: #727272; font-size: 20px; font-weight: 500; }
+@media screen and (max-width:1024px) {
+    .sub_mv { height: 200px; }
+    .sub_mv_text p:nth-child(1) { font-size: 1.8rem; }
+    .sub_mv_text p:nth-child(2) { font-size: 1rem;  }
+}
+@media screen and (max-width:430px) {
+    .sub_mv { margin-top: 100px; height: 200px; }   
+}
+
+/* 서브페이지 공통 타이틀(id번호만교체) */
+#sub03_wrap { padding-top: 60px; }
+.title_wrap { position: relative; }
+.title_location { position: absolute; right: 0; top: -30px; display: flex; align-items: center; }
+.title_location li { margin-right: 10px; }
+.title_location img { width: 24px; }
+.title_location li a { color: #333; }
+#sub03_wrap h2 { padding: 0 16px 40px; font-size: 40px;  text-align: center; }
+
+
+.show_wrap { width: 1060px; margin: 0 auto;  }
+@media screen and (max-width:1060px) {
+    .show_wrap { width: 100%; padding: 0 10px; }
+}
+
+
+/* tab스타일 */
+.tab{ width: 100%; }
+.tab { display: flex; justify-content: space-between; align-items: center; padding-bottom: 30px; border-bottom: 2px solid #333; }
+.tab p { width: 49.9%; height: 68px; line-height: 68px; background: #ddd; font-size: 20px; font-weight: 500; text-align: center; }
+.tab p:hover { background: #333; color: #fff; cursor: pointer; }
+
+/* sub03본문 */
+.tab_list { width: 900px; margin: 0 auto; padding-top: 30px; padding-bottom: 160px; }
+.tab_title p:nth-child(1) { color: #E2383F; } 
+.tab_title p:nth-child(2) { font-size: 30px; font-weight: 500; margin-bottom: 20px; }
+.tab_01 .tab_thumb { position: relative; width: 100%; height: 520px; background: url(../images/sub03_1/tab1_1_1.jpg) no-repeat center; background-size: cover; margin-bottom: 30px; }
+.thumb_txt { position: absolute; left: 0; bottom: 0; width: 100%; height: 80px; line-height: 80px;  background: rgba(0,0,0,0.8); color: #fff; padding-left: 2%; }
+.tab_detail_top { padding-bottom: 40px; border-bottom: 2px solid #333; }
+.tab_detail_top p { font-size: 17px; color: #727272; line-height: 1.4; }
+.tab_detail_top p:nth-child(1) { margin-bottom: 10px; }
+
+.t_title { margin: 30px 0 10px; font-size: 18px; font-weight: 600; }
+.t_txt { color: #727272; line-height: 1.4; font-size: 17px; margin-bottom: 10px; }
+.img_caption { font-size: 14px; color: #F5822B; margin: 10px 0 20px; }
+.tab_img2 { display: flex; justify-content: space-between; }
+.tab_img2 li { width: 49.9%; }
+.tab_img2 li img { width: 100%; }
+
+.tab_02 { display: none; }
+.tab_02 .tab_thumb { position: relative; width: 100%; height: 520px; background: url(../images/sub03_1/tab1_2_1.jpg) no-repeat center; background-size: cover; margin-bottom: 30px; }
+.tab_02 img { width: 100%; }
+
+@media screen and (max-width:1060px) {
+    .tab_list { width: 100%;}
+    .tab_list img { width: 100%; }
+}

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="한국영상자료원의 상영 일정, 영상자료, 영화박물관 전시와 프로그램을 소개합니다.">
+    <title>한국영상자료원</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- Swiper 슬라이드 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <!-- 공통 header -->
+    <header>
+        <nav class="inner">
+            <button type="button" class="menu_icon" aria-label="메뉴 열기"><img src="images/icon/icon_menu.png" alt=""></button>
+            <div class="logo"><a href="./index.html"><img src="images/logo/logo_b.png" alt="한국영상자료원"></a></div>
+            <ul class="gnb">
+                <li><a href="./sub1.html">시네마테크</a></li>
+                <li><a href="./sub2.html">영상도서관</a></li>
+                <li><a href="./sub3.html">한국영화박물관</a></li>
+                <li><a href="./sub4.html">고객서비스</a></li>
+                <li><a href="./sub5.html">기관소개</a></li>
+            </ul>
+            <div class="icon">
+                <div class="ticket"><a href="#"><img src="images/icon/icon_ticket1.png" alt="티켓"></a></div>
+                <div class="login"><a href="#"><img src="images/icon/icon_person.png" alt="로그인"></a></div>
+            </div>
+        </nav>
+
+        <div class="gnb_depth1">
+            <div class="inner">
+                <ul class="sub">
+                    <li>
+                        <div><a href="./sub1.html">상영일정</a></div>
+                        <div><a href="#">KOFA컬렉션</a></div>
+                    </li>
+        
+                    <li>
+                        <div><a href="./sub2.html">자료검색</a></div>
+                        <div><a href="#">컬렉션</a></div>
+                        <div><a href="https://www.kmdb.or.kr/main" target="_blank" rel="noopener noreferrer">KMDb</a></div>
+                    </li>
+        
+                    <li>
+                        <div><a href="./sub3.html">상설전시</a></div>
+                        <div><a href="#">기획전시</a></div>
+                        <div><a href="#">프로그램</a></div>
+                    </li>
+                    
+                    <li>
+                        <div><a href="./sub4.html">고객서비스홈</a></div>
+                        <div><a href="#">고객문의</a></div>
+                    </li>
+        
+                    <li>
+                        <div><a href="./sub5.html">소개</a></div>
+                        <div><a href="#">시설별 이용안내</a></div>
+                        <div><a href="#">시설별 공지</a></div>
+                    </li>
+
+                    <li><img src="images/logo/logo_symbol.png" alt="심벌"></li>
+                </ul>
+            </div><!-- /.gnb_depth1 -->            
+        </div>
+    </header><!-- /.header -->
+
+    <div id="main_visual">
+        <div class="inner">
+            <div class="showcase">
+                <h1>현재상영작</h1>
+                <div class="swiper_showcase">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main_visual/mv_01.jpg" alt="영화"></a>
+                            <p class="k_text">미망</p>
+                            <p class="f_text">(Mimang)</p>
+                            <div class="btn"><a href="#">예매</a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main_visual/mv_02.jpg" alt="영화"></a>
+                            <p class="k_text">플레이스 비욘드 더 파인스</p>
+                            <p class="f_text">(The Place Beyond The Pines)</p>
+                            <div class="btn"><a href="#">예매</a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main_visual/mv_03.jpg" alt="영화"></a>
+                            <p class="k_text">제로의 초점</p>
+                            <p class="f_text">(ゼロの焦点)</p>
+                            <div class="btn"><a href="#">예매</a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main_visual/mv_04.jpg" alt="영화"></a>
+                            <p class="k_text">에덴의 동쪽</p>
+                            <p class="f_text">(East of Eden)</p>
+                            <div class="btn"><a href="#">예매</a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main_visual/mv_05.jpg" alt="영화"></a>
+                            <p class="k_text">삶과 죽음의 문제</p>
+                            <p class="f_text">(A Matter of Life and Death)</p>
+                            <div class="btn"><a href="#">예매</a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main_visual/mv_06.jpg" alt="영화"></a>
+                            <p class="k_text">기아해협</p>
+                            <p class="f_text">(飢餓海峽)</p>
+                            <div class="btn"><a href="#">예매</a></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="control">
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                </div>  
+            </div><!-- /.showcase -->
+
+            <div class="thumb">
+                <div class="swiper_thumb">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main_visual/mv_02.jpg" alt="영화"></a>
+                            <p class="k_text">플레이스 비욘드 더 파인스</p>
+                            <p class="f_text">(The Place Beyond The Pines)</p>
+                            <div class="btn"><a href="#">예매</a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main_visual/mv_03.jpg" alt="영화"></a>
+                            <p class="k_text">제로의 초점</p>
+                            <p class="f_text">(ゼロの焦点)</p>
+                            <div class="btn"><a href="#">예매</a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main_visual/mv_04.jpg" alt="영화"></a>
+                            <p class="k_text">에덴의 동쪽</p>
+                            <p class="f_text">(East of Eden)</p>
+                            <div class="btn"><a href="#">예매</a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main_visual/mv_05.jpg" alt="영화"></a>
+                            <p class="k_text">삶과 죽음의 문제</p>
+                            <p class="f_text">(A Matter of Life and Death)</p>
+                            <div class="btn"><a href="#">예매</a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main_visual/mv_06.jpg" alt="영화"></a>
+                            <p class="k_text">기아해협</p>
+                            <p class="f_text">(飢餓海峽)</p>
+                            <div class="btn"><a href="#">예매</a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main_visual/mv_01.jpg" alt="영화"></a>
+                            <p class="k_text">미망</p>
+                            <p class="f_text">(Mimang)</p>
+                            <div class="btn"><a href="#">예매</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.thumb -->
+        </div>
+    </div><!-- /#main_visual -->
+
+    <main>
+        <section id="sec_01">
+            <div class="grid">
+                <h1>영상자료실</h1>
+                <div class="archive_wrap">
+                    <div class="archive_img">
+                        <a href="#" class="is-active"><img src="images/sec01/sec01_01_1.jpg" alt="자료실"></a>
+                        <a href="#"><img src="images/sec01/sec01_02_1.jpg" alt="자료실"></a>
+                        <a href="#"><img src="images/sec01/sec01_03_1.jpg" alt="자료실"></a>
+                    </div>
+                    <ul class="archive_list">
+                        <li><a href="./sub2.html">자료검색</a></li>
+                        <li><a href="#">컬렉션</a></li>
+                        <li><a href="https://www.kmdb.or.kr/main" target="_blank" rel="noopener noreferrer">KMDb</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section><!-- /#sec_01 -->
+
+        <!-- 모바일 sec_01 -->
+        <section id="m_sec_01">
+            <div class="grid">
+                <h1>영상자료실</h1>
+                <ul class="m_archive">
+                    <li>
+                        <a href="./sub2.html">
+                            <p><img src="images/sec01/m_sec01_01.png" alt="m자료실"></p>
+                            <p>자료검색</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p><img src="images/sec01/m_sec01_02.png" alt="m자료실"></p>
+                            <p>컬렉션</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.kmdb.or.kr/main">
+                            <p><img src="images/sec01/m_sec01_03.png" alt="m자료실"></p>
+                            <p>KMDb</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section><!-- /#m_sec_01 -->
+
+        <section id="sec_02">
+            <h1>영화박물관</h1>
+            <div class="grid">
+                <div class="sec_02_main">
+                    <!-- Slider main container -->
+                    <div class="swiper_main">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="main_img"><a href="./sub3_2.html"><img src="images/sec02/sec02_1.jpg" alt="박물관"></a></div>
+                                <div class="main_text">
+                                    <h3>한국영화박물관 기획전시</h3>
+                                    <h2>영화문고</h2>
+                                    <div>영화출판과 읽기의 연대기<br>
+                                        1980년대 이후 영화문화의 흐름을 보다.</div>
+                                    <p>#영화문고 #영화출판 #FilmBookshop</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_img"><a href="./sub3.html"><img src="images/sec02/sec02_2.jpg" alt="박물관"></a></div>
+                                <div class="main_text">
+                                    <h3>한국영화박물관 상설전시</h3>
+                                    <h2>한국영화를 보다</h2>
+                                    <div>영화의 탄생과 초기의 흐름 그리고<br>
+                                        한국영화의 역사를 조망하다.</div>
+                                    <p>#영화의탄생 #우리영화100년 #한국영화100선</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_img"><a href="./sub3.html"><img src="images/sec02/sec02_3.jpg" alt="박물관"></a></div>
+                                <div class="main_text">
+                                    <h3>한국영화박물관 상설전시</h3>
+                                    <h2>초기영화로의 초대</h2>
+                                    <div>초기영화의 중요한 순간을 마주하며<br>
+                                        영화에 대해 다시 생각해보다.</div>
+                                    <p>#초기영화 #필름영화 #최초여성감독</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /#sec_02 -->
+
+
+                <div class="sec_02_sub">
+                    <!-- Slider main container -->
+                    <div class="swiper_sub">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><a href="./sub3_2.html"><img src="images/sec02/sec02_1.jpg" alt="박물관"></a></div>
+                            <div class="swiper-slide"><a href="./sub3.html"><img src="images/sec02/sec02_2.jpg" alt="박물관"></a></div>
+                            <div class="swiper-slide"><a href="./sub3.html"><img src="images/sec02/sec02_3.jpg" alt="박물관"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.grid -->
+        </section><!-- /#sec_02_sub -->
+
+        <section id="sec_02_2">
+            <div class="grid">
+                <h2>프로그램</h2>
+                <ul class="prog_list">
+                    <li>
+                        <a href="#">
+                            <div><img src="images/sec02/program_01_thumb.jpg" alt="프로그램"></div>
+                            <div>
+                                <p class="sec02_title">모집중</p>
+                                <p class="sec02_text">[2016~19년생/ 실시간 온라인] KOFA 라이브 키즈 클럽- 알사탕</p>
+                                <p class="sec02_date">2025.02.21.(금) ~ 02.21.(금)</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div><img src="images/sec02/program_02_thumb.jpg" alt="프로그램"></div>
+                            <div>
+                                <p class="sec02_title">모집예정</p>
+                                <p class="sec02_text">[2014년생 이상 단체] 박물관 전시 도슨트 예약 해설(3월)</p>
+                                <p class="sec02_date">2025.03.01.(토) ~ 03.29.(토)</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div><img src="images/sec02/program_03_thumb.jpg" alt="프로그램"></div>
+                            <div>
+                                <p class="sec02_title">모집완료</p>
+                                <p class="sec02_text">[[2012~15년생] 2025 <어린이영화아카데미> </p>
+                                <p class="sec02_date">2025.02.19.(수) ~ 03.15.(토)</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section><!-- /#sec_02_2 -->
+
+        <section id="sec_notice">
+            <div class="inner">
+                <div class="notice_left">
+                    <h1>자료원소식</h1>
+                    <div class="more"><a href="#"><img src="images/icon/icon_more.png" alt="더보기"></a></div>
+                </div>
+                <ul class="notice_right">
+                    <li>
+                        <a href="#">
+                            <p class="noti_title">시네마테크</p>
+                            <p class="noti_text">3월 6일(목) <미망> 상영 전 무대인사</p>
+                            <p class="noti_date">2025.02.28</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="noti_title">영상도서관</p>
+                            <p class="noti_text">2025년 영상도서관 연구자 지원 프로그램 안내</p>
+                            <p class="noti_date">2025.02.26</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="noti_title">한국영화박물관</p>
+                            <p class="noti_text"> 한국영화박물관 운영 시간 변경 안내</p>
+                            <p class="noti_date">2025.03.04</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section><!-- /#sec_notice -->
+
+        <section id="sec_sns">
+            <div class="inner">
+                <div class="sns_left">
+                    <ul class="channel">
+                        <li>
+                            <a href="https://www.youtube.com/user/KoreanFilm" target="_blank" rel="noopener noreferrer">
+                                <div class="sns_icon"><img src="images/icon/icon_youtube.png" alt="유튜브"></div>
+                                <div class="sns_text">
+                                    <p>유튜브 한국고전영화채널</p>
+                                    <p>youtube.com/KoreanFilm</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://tv.naver.com/koreanfilm" target="_blank" rel="noopener noreferrer">
+                                <div class="sns_icon"><img src="images/icon/icon_navertv.png" alt="네이버"></div>
+                                <div class="sns_text">
+                                    <p>네이버tv 한국고전영화 채널</p>
+                                    <p>tv.naver.com/koreanfilm</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/koreananimation" target="_blank" rel="noopener noreferrer">
+                                <div class="sns_icon"><img src="images/icon/icon_youtube.png" alt="유튜브"></div>
+                                <div class="sns_text">
+                                    <p>유튜브 한국애니메이션 채널</p>
+                                    <p>youtube.com/KoreanAnimation</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/koreanfilmarchive" target="_blank" rel="noopener noreferrer">
+                                <div class="sns_icon"><img src="images/icon/icon_youtube.png" alt="유튜브"></div>
+                                <div class="sns_text">
+                                    <p>유튜브 한국영상자료원 공식채널</p>
+                                    <p>youtube.com/KoreanFilmAchive</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sns_right">
+                    <ul class="sns">
+                        <li><a href="https://www.instagram.com/koreanfilmarchive/" target="_blank" rel="noopener noreferrer"><img src="images/icon/icon_insta.png" alt="sns"></a></li>
+                        <li><a href="https://www.facebook.com/koreanfilmarchive" target="_blank" rel="noopener noreferrer"><img src="images/icon/icon_fb.png" alt="sns"></a></li>
+                        <li><a href="https://x.com/Film_Archive" target="_blank" rel="noopener noreferrer"><img src="images/icon/icon_x.png" alt="sns"></a></li>
+                        <li><a href="https://artsandculture.google.com/partner/korean-film-archive" target="_blank" rel="noopener noreferrer"><img src="images/icon/icon_gA&C.png" alt="sns"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section><!-- /#sec_sns -->
+
+        <!-- 모바일 sec_sns -->
+        <section id="m_sec_sns">
+            <div class="inner">
+                <div class="m_sns_top">
+                    <ul class="m_channel">
+                        <li>
+                            <a href="https://www.youtube.com/user/KoreanFilm" target="_blank" rel="noopener noreferrer">
+                                <div class="m_sns_icon"><img src="images/icon/icon_youtube.png" alt="유튜브"></div>
+                                <div class="m_sns_text">
+                                    <p>유튜브 한국고전영화채널</p>
+                                    <p>youtube.com/KoreanFilm</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://tv.naver.com/koreanfilm" target="_blank" rel="noopener noreferrer">
+                                <div class="m_sns_icon"><img src="images/icon/icon_navertv.png" alt="네이버"></div>
+                                <div class="m_sns_text">
+                                    <p>네이버tv 한국고전영화 채널</p>
+                                    <p>tv.naver.com/koreanfilm</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/koreananimation" target="_blank" rel="noopener noreferrer">
+                                <div class="m_sns_icon"><img src="images/icon/icon_youtube.png" alt="유튜브"></div>
+                                <div class="m_sns_text">
+                                    <p>유튜브 한국애니메이션 채널</p>
+                                    <p>youtube.com/KoreanAnimation</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/koreanfilmarchive" target="_blank" rel="noopener noreferrer">
+                                <div class="m_sns_icon"><img src="images/icon/icon_youtube.png" alt="유튜브"></div>
+                                <div class="m_sns_text">
+                                    <p>유튜브 한국영상자료원 공식채널</p>
+                                    <p>youtube.com/KoreanFilmAchive</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="m_sns_bot">
+                    <ul class="m_sns">
+                        <li><a href="https://www.instagram.com/koreanfilmarchive/" target="_blank" rel="noopener noreferrer"><img src="images/icon/icon_insta.png" alt="sns"></a></li>
+                        <li><a href="https://www.facebook.com/koreanfilmarchive" target="_blank" rel="noopener noreferrer"><img src="images/icon/icon_fb.png" alt="sns"></a></li>
+                        <li><a href="https://x.com/Film_Archive" target="_blank" rel="noopener noreferrer"><img src="images/icon/icon_x.png" alt="sns"></a></li>
+                        <li><a href="https://artsandculture.google.com/partner/korean-film-archive" target="_blank" rel="noopener noreferrer"><img src="images/icon/icon_gA&C.png" alt="sns"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section><!-- /#m_sec_sns -->
+
+
+    </main>
+
+    <!-- 공통 footer -->
+    <footer>
+        <div class="inner">
+            <div class="bottom1">
+                <p><a href="#"><img src="images/logo/bottom01_01.jpg" alt="기관로고"></a></p>
+                <p><a href="#"><img src="images/logo/bottom01_02.jpg" alt="기관로고"></a></p>
+                <p><a href="#"><img src="images/logo/bottom01_03.jpg" alt="기관로고"></a></p>
+                <p><a href="#"><img src="images/logo/bottom01_04.jpg" alt="기관로고"></a></p>
+                <p><a href="#"><img src="images/logo/bottom01_05.jpg" alt="기관로고"></a></p>
+                <p><a href="#"><img src="images/logo/bottom01_06.jpg" alt="기관로고"></a></p>
+            </div><!-- /.bottom1 -->
+    
+            <div class="bottom2">
+                <div class="foot_logo">
+                    <a href="./"><img src="images/logo/logo_w.png" alt="로고"></a>
+                </div>
+                <div class="bot2_right">
+                    <p>개인정보처리방침</p>
+                    <ul>
+                        <li>
+                            <a href="#">1:1문의</a>
+                        </li>
+                        <li>
+                            <a href="#">저작권정책</a>
+                        </li>
+                        <li>
+                            <a href="#">오시는 길</a>
+                        </li>
+                        <li>
+                            <a href="#">고객만족헌장</a>
+                        </li>
+                        <li>
+                            <a href="#">사이트맵</a>
+                        </li>
+                        <li>
+                            <a href="#">FIAF 선언</a>
+                        </li>
+                        <li>
+                            <a href="#">뷰어 다운로드</a>
+                        </li>
+                        <li>
+                            <a href="#">클린신고센터</a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- /.bottom2 -->
+    
+            <div class="bottom3">
+                <div class="company">
+                    <div class="bot3_left">
+                        <p>본원</p>
+                        <p>서울시 마포구 월드컵북로 400 한국영상자료원 (우 03925)</p>
+                        <p>전화: 02)3153-2001 팩스: 02)3153-2080</p>
+                    </div>
+
+                    <div class="bot3_right">
+                        <p>파주</p>
+                        <p>경기도 파주시 문발로 301 (우 10881)</p>
+                    </div>
+                </div>
+
+                <div class="copy">© Korean Film Archive. All Rights Reserved</div>
+
+                
+            </div><!-- /.bottom3 -->
+        </div>
+        
+    </footer>
+
+
+
+    <!-- 모바일메뉴 -->
+    <div class="m_menu" role="dialog" aria-modal="true" aria-hidden="true" aria-label="모바일 메뉴">
+        <div class="menu_wrap">
+            <div class="m_icon">
+                <button type="button" class="close" aria-label="메뉴 닫기"><img src="images/icon/icon_close.png" alt=""></button>
+                <div class="m_login"><a href="#"><img src="images/icon/icon_person.png" alt="모바일로그인"></a></div>
+            </div>
+            <ul class="m_gnb">
+                <li>
+                    <div class="m_gnb_wrap" role="button" tabindex="0" aria-expanded="false">
+                        <p>시네마테크</p>
+                        <p class="icon_down down1"><img src="images/icon/icon_down.png" alt="아래"></p>
+                    </div>
+                    <ul class="m_sub sub1">
+                        <li><a href="./sub1.html">상영일정</a></li>
+                        <li><a href="#">KOFA컬렉션</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="m_gnb_wrap" role="button" tabindex="0" aria-expanded="false">
+                        <p>영상도서관</p>
+                        <p class="icon_down down2"><img src="images/icon/icon_down.png" alt="아래"></p>
+                    </div>
+                    <ul class="m_sub sub2">
+                        <li><a href="./sub2.html">자료검색</a></li>
+                        <li><a href="#">컬렉션</a></li>
+                        <li><a href="https://www.kmdb.or.kr/main" target="_blank" rel="noopener noreferrer">KMDb</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="m_gnb_wrap" role="button" tabindex="0" aria-expanded="false">
+                        <p>한국영화박물관</p>
+                        <p class="icon_down down3"><img src="images/icon/icon_down.png" alt="아래"></p>
+                    </div>
+                    <ul class="m_sub sub3">
+                        <li><a href="./sub3.html">상설전시</a></li>
+                        <li><a href="#">기획전시</a></li>
+                        <li><a href="#">영화관옆 박물관</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="m_gnb_wrap" role="button" tabindex="0" aria-expanded="false">
+                        <p>고객서비스</p>
+                        <p class="icon_down down4"><img src="images/icon/icon_down.png" alt="아래"></p>
+                    </div>
+                    <ul class="m_sub sub4">
+                        <li><a href="./sub4.html">고객서비스홈</a></li>
+                        <li><a href="#">고객문의</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="m_gnb_wrap" role="button" tabindex="0" aria-expanded="false">
+                        <p>기관소개</p>
+                        <p class="icon_down down5"><img src="images/icon/icon_down.png" alt="아래"></p>
+                    </div>
+                    <ul class="m_sub sub5">
+                        <li><a href="./sub5.html">소개</a></li>
+                        <li><a href="#">시설별 이용안내</a></li>
+                        <li><a href="#">시설별 공지</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 오른쪽 고정 아이콘 -->
+    <div class="fi_wrap">
+        <div class="search"><a href="./sub2.html"><img src="images/icon/icon_search.png" alt="검색"></a></div>
+        <div class="up"><a href="#"><img src="images/icon/icon_top.png" alt="위로"></a></div>
+    </div>
+
+
+
+
+</body>
+</html>

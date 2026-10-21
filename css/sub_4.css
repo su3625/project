@@ -1,0 +1,84 @@
+/* 서브페이지 메인비주얼(bg 바꿀것) */
+.sub_mv { margin-top: 120px; width: 100%; height: 260px; background: url(../images/sub_mv/sub_04.jpg) no-repeat center; background-size: cover; }
+.sub_mv_text { color: #fff; text-align: center; padding: 70px 0; }
+.sub_mv_text p:nth-child(1) { font-size: 60px; }
+.sub_mv_text p:nth-child(2) { color: #727272; font-size: 20px; font-weight: 500; }
+@media screen and (max-width:1024px) {
+    .sub_mv { height: 200px; }
+    .sub_mv_text p:nth-child(1) { font-size: 1.8rem; }
+    .sub_mv_text p:nth-child(2) { font-size: 1rem;  }
+}
+@media screen and (max-width:430px) {
+    .sub_mv { margin-top: 100px; height: 200px; }   
+}
+
+/* 서브페이지 공통 타이틀(id번호만교체) */
+#sub04_wrap { padding-top: 60px; }
+.title_wrap { position: relative; }
+.title_location { position: absolute; right: 0; top: -30px; display: flex; align-items: center; }
+.title_location li { margin-right: 10px; }
+.title_location img { width: 24px; }
+.title_location li a { color: #333; }
+#sub04_wrap h2 { padding: 0 16px 40px; font-size: 40px;  text-align: center; }
+
+
+.customer_wrap { width: 1200px; margin: 0 auto; }
+@media screen and (max-width:1200px) {
+    .customer_wrap { width: 100%; padding: 0 30px; }
+}
+@media screen and (max-width:768px) {
+    .customer_wrap { width: 100%; padding: 0 16px; }
+}
+
+/* 상단부 박스 */
+.customer_main { width: 100%; height: 400px; padding: 80px 0; background: url(../images/sub04/sub4_mainimg.jpg) no-repeat center; background: cover; margin-bottom: 30px; }
+.customer_main ul { display: flex; justify-content: space-around; align-items: center; }
+.customer_main li { width: 300px; height: 250px; border: 2px solid #fff; color: #fff; padding: 4% 4%; }
+.c_title { font-size: 30px; margin-bottom: 20%; }
+.c_txt { font-size: 14px; height: 20px; margin-bottom: 8px; }
+.icon_tel { padding-left: 24px; background: url(../images/sub04/sub4_icon_tel_2.png) no-repeat 0;  }
+.icon_fax { padding-left: 24px; background: url(../images/sub04/sub4_icon_fax.png) no-repeat 0; }
+.icon_email { padding-left: 24px; background: url(../images/sub04/sub4_icon_email_2.png) no-repeat 0;  }
+.customer_main li:hover { background: #fff; color: #333; cursor: pointer; }
+.customer_main li:hover .icon_tel { background: url(../images/sub04/sub4_icon_tel_2_b.png) no-repeat 0; }
+.customer_main li:hover .icon_fax { background: url(../images/sub04/sub4_icon_fax_b.png) no-repeat 0; }
+.customer_main li:hover .icon_email { background: url(../images/sub04/sub4_icon_email_2_b.png) no-repeat 0; }
+
+@media screen and (max-width:1200px) {
+    .customer_main li { width: 280px; height: 200px; border: 2px solid #fff; color: #fff; padding: 4% 4%; }
+    .c_title { font-size: 24px; margin-bottom: 10%; }
+}
+@media screen and (max-width:1024px) {
+    .customer_main li { width: 200px; height: 160px; border: 2px solid #fff; color: #fff; padding: 2% 2%; }
+    .c_title { font-size: 20px; margin-bottom: 8%; }
+}
+@media screen and (max-width:768px) {
+    .customer_main { width: 100%; height: 400px; padding: 10px 0; text-align: center; background: url(../images/sub04/sub4_mainimg.jpg) no-repeat center; background: cover; margin-bottom: 30px; }
+    .customer_main ul { display: inline-block; text-align: center;}
+    .customer_main li { width: 300px; height: 120px; border: 2px solid #fff; color: #fff; padding: 0; text-align: center; margin-bottom: 8px; }
+    .c_title { font-size: 20px; margin-bottom: 1%; }
+}
+
+
+
+/* sub04 본문 */
+.customer_content { width: 1060px; margin: 0 auto; }
+.content_title { font-size: 30px; padding-bottom: 20px; border-bottom: 2px solid #333; }
+.content_list { padding: 30px 0; margin-bottom: 30px; border-bottom: 2px solid #333; }
+.content_list li { margin-bottom: 60px;}
+.cl_title { font-size: 18px; font-weight: 600; margin-bottom: 16px; }
+.cl_icon1 { padding: 20px 40px; background: url(../images/sub04/sub4_icon_movie.png) no-repeat 0; }
+.cl_icon2 { padding: 20px 40px; background: url(../images/sub04/sub4_icon_witak.png) no-repeat 0; }
+.cl_icon3 { padding: 20px 40px; background: url(../images/sub04/sub4_icon_buy.png) no-repeat 0; }
+.cl_icon4 { padding: 20px 40px; background: url(../images/sub04/sub4_icon_donate.png) no-repeat 0; }
+
+.cl_detail { color: #727272; margin-bottom: 16px; }
+.cl_txt { display: flex; justify-content: space-between; padding: 20px 20px; background: #ddd; }
+.cl_left { width: 18%;  border-right: 1px solid #333; }
+.cl_right { width: 80%; color: #727272; }
+
+@media screen and (max-width:1200px) {
+    .customer_content { width: 100%; padding: 0 20px; }
+    .cl_left { width: 24%; border-right: 1px solid #333; }
+    .cl_right { width: 70%; color: #727272; }
+}

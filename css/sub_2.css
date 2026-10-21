@@ -1,0 +1,110 @@
+/* 서브페이지 메인비주얼(bg 바꿀것) */
+.sub_mv { margin-top: 120px; width: 100%; height: 260px; background: url(../images/sub_mv/sub_02.jpg) no-repeat center; background-size: cover; }
+.sub_mv_text { color: #fff; text-align: center; padding: 70px 0; }
+.sub_mv_text p:nth-child(1) { font-size: 60px; }
+.sub_mv_text p:nth-child(2) { color: #727272; font-size: 20px; font-weight: 500; }
+@media screen and (max-width:1024px) {
+    .sub_mv { height: 200px; }
+    .sub_mv_text p:nth-child(1) { font-size: 1.8rem; }
+    .sub_mv_text p:nth-child(2) { font-size: 1rem;  }
+}
+@media screen and (max-width:430px) {
+    .sub_mv { margin-top: 100px; height: 200px; }   
+}
+
+/* 서브페이지 공통 타이틀(id번호만교체) */
+#sub02_wrap { padding-top: 60px; }
+.title_wrap { position: relative; }
+.title_location { position: absolute; right: 0; top: -30px; display: flex; align-items: center; }
+.title_location li { margin-right: 10px; }
+.title_location img { width: 24px; }
+.title_location li a { color: #333; }
+#sub02_wrap h2 { padding: 0 16px 40px; font-size: 40px;  text-align: center; }
+
+/* sub02본문 */
+
+/* 검색창 */
+.sub_search { width: 1060px; margin: 50px auto; padding-top: 5%; height: 300px; background: #333; text-align: center; position: relative; }
+.list_top { position: absolute; left: 0; top: -40px; display: flex;  }
+.list_top li { width: 128px; }
+.list_top li>a { color: #333; font-size: 18px; display: block; padding: 10px 20px; text-align: center; }
+.list_top>.on {  background: #333; }
+.list_top>.on>a { color: #fff; background: #333; }
+
+.search_title { color: #ddd; font-size: 38px; margin-bottom: 30px; display: flex; justify-content: center; align-items: center; }
+.search_title>.st_img1 { width: 40px; height: 40px; background: url(../images/icon/icon_movie.png) no-repeat center; background-size: cover; margin-right: 10px; }
+.search_title>.st_img1 img { width: 100%; }
+.search_title span { font-weight: 100; }
+.sub_search_wrap { display: flex; justify-content: center; align-items: center; }
+.sub_search_wrap p { color: #fff; font-size: 18px; }
+.search_input { display: flex; justify-content: center;align-items: center; }
+.sub_search input { border: 1px solid #fff; border-radius: 20px; padding: 30px; margin: 0 20px; width: 600px; height: 50px; font-size: 20px; }
+.sub_search img { width: 30px; cursor: pointer; }
+
+@media screen and (max-width:1300px) {
+    .sub_search { width: 100%; padding: 50px 30px; height: 300px; background: #333; text-align: center; position: relative; }
+}
+@media screen and (max-width:1024px) {
+    .sub_search { width: 100%; padding: 40px 20px; height: 300px; background: #333; text-align: center; position: relative; }
+    .sub_search_wrap { display: inline-block; justify-content: center; align-items: center; }
+    .sub_search_wrap p  { padding-bottom: 20px; }
+    .search_input { display: flex;  }
+    .sub_search input { border: 1px solid #fff; border-radius: 20px; padding: 30px; margin: 0 20px; width: 500px; height: 50px; font-size: 20px; }
+    
+}
+@media screen and (max-width:768px) {
+    .sub_search { width: 100%; padding: 40px 18px; height: 260px; background: #333; text-align: center; position: relative; }
+    .sub_search input { border: 1px solid #fff; border-radius: 20px; padding: 30px; margin: 0 20px; width: 300px; height: 50px; font-size: 18px; } 
+}
+@media screen and (max-width:430px) {
+    .sub_search { width: 100%; padding: 40px 18px; height: 260px; background: #333; text-align: center; position: relative; }
+    .sub_search input { border: 1px solid #fff; border-radius: 20px; padding: 30px; margin: 0 20px; width: 260px; height: 50px; font-size: 16px; } 
+}
+
+
+/* 본문 테이블 */
+.box_librarylist { border-top: 2px solid #333; }
+.table { width: 1060px; margin: 0 auto; }
+.table>table { width: 100%; }
+table thead { text-align: left; }
+table thead th:nth-child(2) { width: 14.5%; }
+table thead th:nth-child(3) { width: 18%; }
+table th { border-bottom: 1px solid #ddd; text-align: left; vertical-align: top; padding: 10px 0;  }
+table tbody td { border-bottom: 1px solid #ddd; text-align: left; vertical-align: top; padding: 20px 0; font-size: 18px; }
+
+@media screen and (max-width:1100px) {
+    .table { width: 100%; padding: 0 20px; }
+}
+
+
+.thumb_wrap { display: flex; font-size: 16px; cursor: pointer; }
+.thumb_img { width: 140px; height: 185px; overflow: hidden;}
+.thumb_img .inner_thumb img { width: 100%;  transition: all 0.8s; }
+.thumb_wrap:hover .thumb_img .inner_thumb img { transform: scale(1.1); }
+
+.lib_txtwrap { margin-left: 4%; }
+.box-title { font-size: 24px;  color: #333; margin-bottom: 10px; }
+.box-title>p:nth-child(2) { width: 0; height: 5px; background: #333; transition: all 0.8s; margin-top: 4px; }
+.thumb_wrap:hover .box-title>p:nth-child(2) { left: 0;  width: 100%;  }
+.lib_list li { margin-bottom: 10px; color: #727272; position: relative; padding-left: 100px; }
+.lib_txt { position: absolute; top: 0; left: 0; font-weight: 600; margin-right: 30px; color: #333; }
+@media screen and (max-width:767px) {
+    .table thead th:nth-child(2) { width: 18%; }
+    .table thead th:nth-child(3) { width: 20%; }
+    .table { width: 100%; padding: 0 14px; }
+    .thumb_img { display: none; }
+    .lib_txtwrap { margin-left: 1%; }
+    .box-title { font-size: 20px;  color: #333; margin-bottom: 10px; }
+    .lib_list li { margin-bottom: 10px; color: #727272; position: relative; padding-left: 80px; }
+}
+
+
+
+/* 페이지넘버 */
+.paging { text-align: center; margin: 40px 0; }
+.paging>li { display: inline-block; vertical-align: top; }
+.paging>li>a { display: block; color: #333; width: 30px; height: 30px; font-size: 16px; line-height: 30px; opacity: 0.5; text-align: center; }
+.paging>li>a:hover { opacity: 1; border: 2px solid #333; border-radius: 30px; }
+.paging>li>.first_pg {  border-radius: 30px; background: #333; color: #fff; opacity: 1; }
+.page_next { width: 100%; height: 100%; background: url(../images/icon/icon_prev.png) no-repeat center center; background-size: cover; }
+.page_last { width: 100%; height: 100%; background: url(../images/icon/icon_prev2.png) no-repeat center center; background-size: cover; }

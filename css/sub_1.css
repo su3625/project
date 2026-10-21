@@ -1,0 +1,98 @@
+/* 서브페이지 메인비주얼(bg 바꿀것) */
+.sub_mv { margin-top: 120px; width: 100%; height: 260px; background: url(../images/sub_mv/sub_01.jpg) no-repeat center; background-size: cover; }
+.sub_mv_text { color: #fff; text-align: center; padding: 70px 0; }
+.sub_mv_text p:nth-child(1) { font-size: 60px; }
+.sub_mv_text p:nth-child(2) { color: #727272; font-size: 20px; font-weight: 500; }
+@media screen and (max-width:1024px) {
+    .sub_mv { height: 200px; }
+    .sub_mv_text p:nth-child(1) { font-size: 1.8rem; }
+    .sub_mv_text p:nth-child(2) { font-size: 1rem;  }
+}
+@media screen and (max-width:430px) {
+    .sub_mv { margin-top: 100px; height: 200px; }   
+}
+
+/* 서브페이지 공통 타이틀(id번호만교체) */
+#sub01_wrap { padding-top: 60px; }
+.title_wrap { position: relative; }
+.title_location { position: absolute; right: 0; top: -30px; display: flex; align-items: center; }
+.title_location li { margin-right: 10px; }
+.title_location img { width: 24px; }
+.title_location li a { color: #333; }
+#sub01_wrap h2 { padding: 0 16px 40px; font-size: 40px; border-bottom: 2px solid #333; text-align: center; }
+
+/* 상영일정 */
+.calendar { width: 1060px; margin: 0 auto;  position: relative; padding-left: 80px; padding-bottom: 10px; margin-bottom: 10px;  }
+.month { font-size: 30px; font-weight: 500; position: absolute; left: 0; top: 14px; }
+.list_day { position: relative; padding: 15px 0 30px 155px; }
+.list_wrap { border-bottom: 1px solid #ddd; position: relative; padding-bottom: 20px; justify-content: space-between; align-items: center; }
+.list_day>dd:last-child { border-bottom: none; }
+.day { position: absolute; left: 0; top: 10px; font-size: 40px; }
+.list_detail { padding: 10px 0; margin-bottom: 20px; display: flex;  }
+.list_detail>li { font-size: 18px; }
+.dot {position: relative; padding-right: 16px; }
+.dot>p { display: block; position: absolute; left: 0; top: 4px; width: 14px; height: 14px; line-height: 14px; background: #dc373d; border-radius: 50%; }
+.txt_time { width: 72px; color: #dc373d; margin-left: 10px; }
+.txt_room { width: 120px; text-align: center; }
+.txt_detail { position: relative; }
+
+/* sub01 반응형 */
+@media screen and (max-width:1300px) {
+    .calendar { width: 100%; padding: 0 60px;}
+}
+@media screen and (max-width:1024px) {
+    .list_wrap { border-bottom: 1px solid #333;  }
+    .list_detail { border-top: 1px solid #eee; }
+    .month { position: static; padding-top: 30px; }
+    .list_day { padding: 0; margin: 20px 0; }
+    .day { position: static; padding: 10px 0;  }
+    .txt_time { width: 40px; }
+    .txt_room { width: 60px; text-align: center; }
+}
+@media screen and (max-width:768px) {
+    .calendar { width: 100%; padding: 0 16px;}
+    .list_day { padding: 10px 0; }
+    .list_wrap { position: relative; padding-bottom: 20px; justify-content: space-between; align-items: center; }
+    .list_detail { padding: 20px 0; margin-bottom: 20px; display: block; position: relative; }
+    .txt_time { margin-left: 20px; }
+    .txt_room { position: absolute; left: 80px; top: 20px; }
+    .txt_detail { margin-top: 30px;  }
+}
+
+
+
+/* 공통 영상등급 */
+.grad-12 {  width: 24px; height: 24px; color: #fff; background: #018392; border-radius: 20px; text-align: center; line-height: 24px; font-size: 14px; }
+.grad-15 {  width: 24px; height: 24px; color: #fff; background: #c05300; border-radius: 20px; text-align: center; line-height: 24px; font-size: 14px; }
+.grad-18 {  width: 24px; height: 24px; color: #fff; background: #dc373d; border-radius: 20px; text-align: center; line-height: 24px; font-size: 14px;  }
+
+.detail_wrap { display: flex; margin-bottom: 8px; }
+.mv_title { font-size: 20px; padding: 0 24px; cursor: pointer; }
+.comment { font-size: 14px; padding: 0 48px;  }
+.comment>p { display: inline-block; color: #727272; }
+.comment>p span { padding: 0 8px; }
+.reserve_btn { width: 100px; height: 40px; line-height: 40px; border: 1px solid #333; text-align: center; position: absolute; right: 0%; }
+.reserve_btn a { color: #333; font-size: 16px; }
+.reserve_btn:hover { background: #dc373d; border: #dc373d; } 
+.reserve_btn:hover a { color: #fff; }
+
+.no_movie { font-size: 24px; font-weight: 500; margin-bottom: 10px; }
+.com_txt { font-size: 13px; color: #727272; }
+
+@media screen and (max-width:768px) {
+    .txt_detail_wrap:hover>.layer_detail { display: none; }
+    .comment {  padding: 0;  }
+    .reserve_btn { width: 80px; height: 26px; line-height: 22px; border: 1px solid #333; text-align: center; position: absolute; right: 0%; top: 16px; }
+    .reserve_btn a { color: #333; font-size: 14px; }
+}
+
+
+/* 영화제목에 마우스오버시 뜸 */
+.layer_detail { display: none; position: absolute; left: 14%; top: -170px; width: 360px; height: 170px; background: #333; padding: 16px; }
+.layer_detail_wrap { display: flex; }
+.layer_img { width: 150px; }
+.layer_img img { width: 80%; }
+.layer_txt_wrap { color: #fff; }
+.layer_txt01 { font-size: 16px; font-weight: 500; margin-bottom: 10px; }
+.layer_txt02 { font-size: 13px; color: #ddd; }
+.txt_detail_wrap:hover .layer_detail { display: block; }
